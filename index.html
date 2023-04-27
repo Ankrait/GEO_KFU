@@ -1,0 +1,313 @@
+<!DOCTYPE html>
+<html lang="ru">
+
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>New Project</title>
+   <link rel="stylesheet" href="css/style.css">
+</head>
+
+<body>
+   <div class="wrapper">
+      <header class="header">
+         <div class="header__container container">
+            <div class="header__logo">
+               <a href="#">
+                  <img src="./img/logo.svg" alt="Логотип">
+               </a>
+            </div>
+            <div class="header__language languageSwitch">
+               <div class="languageSwitch__item">
+                  En
+               </div>
+               <div class="languageSwitch__item _active">
+                  Ru
+               </div>
+            </div>
+            <div class="header__controls controls">
+               <div class="controls__item _notification _active">
+                  <div class="controls__image">
+                     <img src="./img/notification.svg" alt="Уведомления">
+                  </div>
+               </div>
+               <div class="controls__item _profile _active">
+                  <div class="controls__image">
+                     <img src="./img/user.svg" alt="Профиль">
+                  </div>
+               </div>
+               <div class="controls__item _settings">
+                  <div class="controls__image">
+                     <img src="./img/settings.svg" alt="Настройки">
+                  </div>
+               </div>
+               <div class="controls__item _exit">
+                  <div class="controls__image">
+                     <img src="./img/exit.svg" alt="Выход">
+                  </div>
+               </div>
+            </div>
+         </div>
+      </header>
+      <nav class="navbar">
+         <div class="navbar__container container">
+            <div class="navbar__item">
+               <div class="navbar__back">
+                  <svg width="8" height="11" viewBox="0 0 8 11" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path d="M6.10547 1L1.10547 5.5C3.05809 7.25736 4.15285 8.24264 6.10547 10" stroke="black"
+                        stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+                  </svg>
+                  <p>Назад на главную</p>
+               </div>
+            </div>
+            <div class="navbar__item">
+               <ul class="navbar__menu menu-sections">
+                  <li class="menu-sections__item">выбор курса</li>
+                  <li class="menu-sections__item _active">анкета</li>
+                  <li class="menu-sections__item _disabled">договор</li>
+               </ul>
+            </div>
+            <div class="navbar__item">
+               <div class="navbar__save">
+                  <p>сохранить</p>
+                  <svg width="28" height="29" viewBox="0 0 28 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                     <path
+                        d="M26.0371 9.4154L18.731 2.10933C17.8808 1.25805 16.7273 0.779257 15.5242 0.778198H4.67856C3.47502 0.778198 2.32078 1.2563 1.46976 2.10733C0.618727 2.95836 0.140625 4.1126 0.140625 5.31613V23.4679C0.140625 24.6714 0.618727 25.8256 1.46976 26.6767C2.32078 27.5277 3.47502 28.0058 4.67856 28.0058H22.8303C24.0338 28.0058 25.1881 27.5277 26.0391 26.6767C26.8901 25.8256 27.3682 24.6714 27.3682 23.4679V12.6222C27.3672 11.4191 26.8884 10.2656 26.0371 9.4154ZM10.7291 24.9805V21.9552H16.7797V24.9805H10.7291ZM24.3429 23.4679C24.3429 23.869 24.1836 24.2538 23.8999 24.5375C23.6162 24.8211 23.2315 24.9805 22.8303 24.9805H19.805V20.4426C19.805 20.0414 19.6456 19.6567 19.362 19.373C19.0783 19.0893 18.6935 18.9299 18.2924 18.9299H9.21649C8.81531 18.9299 8.43057 19.0893 8.14689 19.373C7.86321 19.6567 7.70385 20.0414 7.70385 20.4426V24.9805H4.67856C4.27738 24.9805 3.89263 24.8211 3.60896 24.5375C3.32528 24.2538 3.16591 23.869 3.16591 23.4679V5.31613C3.16591 4.91495 3.32528 4.53021 3.60896 4.24653C3.89263 3.96285 4.27738 3.80349 4.67856 3.80349H7.70385V11.3667C7.70385 11.7679 7.86321 12.1526 8.14689 12.4363C8.43057 12.72 8.81531 12.8794 9.21649 12.8794H18.2924C18.6935 12.8794 19.0783 12.72 19.362 12.4363C19.6456 12.1526 19.805 11.7679 19.805 11.3667C19.805 10.9655 19.6456 10.5808 19.362 10.2971C19.0783 10.0134 18.6935 9.85406 18.2924 9.85406H10.7291V3.80349H15.5242C15.9247 3.80906 16.3083 3.96574 16.5982 4.24215L23.9043 11.5482C24.0445 11.6896 24.1554 11.8572 24.2307 12.0415C24.3059 12.2258 24.3441 12.4231 24.3429 12.6222V23.4679Z"
+                        fill="#0088CC" />
+                  </svg>
+               </div>
+            </div>
+         </div>
+      </nav>
+      <main class="main">
+         <form class="form">
+            <div class="form__container container">
+               <div data-block="aboutme" class="formBlock">
+                  <div class="formBlock__container container-s">
+                     <div class="formBlock__content">
+                        <div class="formBlock__information">
+                           <div class="formBlock__title">
+                              Обо мне
+                           </div>
+                           <div class="formBlock__text">
+                              Просим Вас вносить реальные данные, так&nbsp;как они будут отображены в сертификате
+                           </div>
+                        </div>
+                        <div class="formBlock__list">
+                           <div class="formBlock__item __checkboxes">
+                              <div class="formBlock__checkbox">
+                                 <input type="radio" name="gender" id="woman">
+                                 <label for="woman">Женщина</label>
+                              </div>
+                              <div class="formBlock__checkbox">
+                                 <input type="radio" name="gender" id="man">
+                                 <label for="man">Мужчина</label>
+                              </div>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Фамилия" type="text" name="surname">
+                              <span class="placeholder">Фамилия</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Имя" type="text" name="name">
+                              <span class="placeholder">Имя</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Отчество" type="text" name="patro">
+                              <span class="placeholder">Отчество</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Дата рождения" type="text" name="birthday">
+                              <span class="placeholder">Дата рождения</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Страна гражданства" type="text" name="country">
+                              <span class="placeholder">Страна гражданства</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Телефон" type="text" name="phone">
+                              <span class="placeholder">Телефон</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Электронная почта" type="text" name="email">
+                              <span class="placeholder">Электронная почта</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Место работы" type="text" name="job">
+                              <span class="placeholder">Место работы</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-block="docs" class="formBlock">
+                  <div class="formBlock__container container-s">
+                     <div class="formBlock__content">
+                        <div class="formBlock__information">
+                           <div class="formBlock__title">
+                              Документ
+                           </div>
+                           <div class="formBlock__text">
+                              Добавьте в поля информацию по документу, удостоверяющему Вашу личность
+                           </div>
+                        </div>
+                        <div class="formBlock__list">
+                           <div class="formBlock__name">
+                              Паспортные данные
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Серия" type="text" name="series">
+                              <span class="placeholder">Серия</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Номер" type="text" name="number">
+                              <span class="placeholder">Номер</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Когда выдан" type="text" name="issue_date">
+                              <span class="placeholder">Когда выдан</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Кем выдан" type="text" name="issue_by">
+                              <span class="placeholder">Кем выдан</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Код подразделения" type="text" name="issue_code">
+                              <span class="placeholder">Код подразделения</span>
+                           </div>
+                           <div class="formBlock__item __file">
+                              <input type="file" name="passport_file" id="passport">
+                              <label class="formBlock__label--file" for="passport">
+                                 <span>
+                                    <div class="file-view">
+                                       <div class="file-view__another">
+                                          Другой файл
+                                       </div>
+                                       <div class="file-view__file">
+                                          <canvas class="canva"></canvas>
+                                       </div>
+                                       <div class="file-view__remove">
+                                          Удалить
+                                       </div>
+                                    </div>
+                                    <p>Загрузите ваш документ</p>
+                                 </span>
+                              </label>
+                           </div>
+                           <div class="formBlock__name">
+                              Дополнительные документы
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="СНИЛС" type="text" name="snils">
+                              <span class="placeholder">СНИЛС</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="ИНН" type="text" name="inn">
+                              <span class="placeholder">ИНН</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-block="address" class="formBlock">
+                  <div class="formBlock__container container-s">
+                     <div class="formBlock__content">
+                        <div class="formBlock__information">
+                           <div class="formBlock__title">
+                              Адрес
+                           </div>
+                           <div class="formBlock__text">
+                              Заполните информацию о Вашем месте рождения и настоящем месте постоянного жительства.
+                           </div>
+                        </div>
+                        <div class="formBlock__list">
+                           <div class="formBlock__name">
+                              Место рождения
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Страна" type="text" name="birth_country">
+                              <span class="placeholder">Страна</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Город" type="text" name="birth_city">
+                              <span class="placeholder">Город</span>
+                           </div>
+                           <div class="formBlock__name">
+                              Место постоянного жительства
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Страна" type="text" name="cur_country">
+                              <span class="placeholder">Страна</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Город" type="text" name="cur_city">
+                              <span class="placeholder">Город</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Улица" type="text" name="street">
+                              <span class="placeholder">Улица</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Дом" type="text" name="house_number">
+                              <span class="placeholder">Дом</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Квартира" type="text" name="flat_number">
+                              <span class="placeholder">Квартира</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Индекс" type="text" name="index">
+                              <span class="placeholder">Индекс</span>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
+               <div data-block="education" class=""></div>
+               <div class="menu-page">
+                  <div class="menu-page__content">
+                     <div class="menu-page__list">
+                        <div data-menu="aboutme" class="menu-page__item _active">обо мне</div>
+                        <div data-menu="docs" class="menu-page__item">документ</div>
+                        <div data-menu="address" class="menu-page__item">адрес</div>
+                        <div data-menu="education" class="menu-page__item">образование</div>
+                     </div>
+                     <div class="menu-page__rectnagle">
+                        <span></span>
+                     </div>
+                  </div>
+               </div>
+            </div>
+         </form>
+      </main>
+      <footer class="footer">
+         <div class="footer__buttons">
+            <div class="footer__button">
+               <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M0.646446 4.35356C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464468C4.02369 0.269206 4.34027 0.269206 4.53553 0.464468C4.7308 0.65973 4.7308 0.976313 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53554C4.34027 7.7308 4.02369 7.7308 3.82843 7.53554L0.646446 4.35356ZM26 4.5L1 4.5L1 3.5L26 3.5L26 4.5Z"
+                     fill="black" />
+               </svg>
+               <p>Назад</p>
+            </div>
+            <div class="footer__button _disabled">
+               <p>Вперед</p>
+               <svg width="26" height="8" viewBox="0 0 26 8" fill="none" xmlns="http://www.w3.org/2000/svg">
+                  <path
+                     d="M0.646446 4.35356C0.451185 4.15829 0.451185 3.84171 0.646446 3.64645L3.82843 0.464468C4.02369 0.269206 4.34027 0.269206 4.53553 0.464468C4.7308 0.65973 4.7308 0.976313 4.53553 1.17157L1.70711 4L4.53553 6.82843C4.7308 7.02369 4.7308 7.34027 4.53553 7.53554C4.34027 7.7308 4.02369 7.7308 3.82843 7.53554L0.646446 4.35356ZM26 4.5L1 4.5L1 3.5L26 3.5L26 4.5Z"
+                     fill="black" />
+               </svg>
+            </div>
+         </div>
+         <ul class="footer__menu menu-sections">
+            <li class="menu-sections__item">выбор курса</li>
+            <li class="menu-sections__item _active">анкета</li>
+            <li class="menu-sections__item _disabled">договор</li>
+         </ul>
+      </footer>
+   </div>
+</body>
+<script src="./js/script.js"></script>
+
+</html>

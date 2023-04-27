@@ -1,0 +1,243 @@
+.form__container {
+  position: relative;
+}
+
+.formBlock {
+  margin: 0 0 40px 0;
+  // .formBlock__container
+  &__container {
+  }
+
+  // .formBlock__content
+  &__content {
+    padding: 50px 127px 50px 100px;
+    background: #ebf5fb;
+    border-radius: 15px;
+
+    display: flex;
+    gap: 7%;
+  }
+
+  // .formBlock__information
+  &__information {
+    flex: 0 1 315px;
+  }
+
+  // .formBlock__title
+  &__title {
+    font-weight: 700;
+    font-size: 20px;
+    line-height: calc(24 / 20);
+
+    margin: 0 0 10px 0;
+  }
+
+  // .formBlock__text
+  &__text {
+    line-height: calc(18 / 14);
+  }
+
+  // .formBlock__list
+  &__list {
+    flex: 0 1 50%;
+  }
+
+  // .formBlock__name
+  &__name {
+    margin: 0 0 16px 0;
+    font-weight: 700;
+    font-size: 14px;
+    line-height: calc(18 / 14);
+  }
+
+  // .formBlock__item
+  &__item {
+    position: relative;
+    margin: 0 0 20px 0;
+
+    &.__checkboxes {
+      display: flex;
+      align-items: center;
+      gap: 24px;
+    }
+
+    & input[type="file"] {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    & input[type="text"] {
+      width: 100%;
+      padding: 15px 15px 12px 15px;
+      border: 0.2px solid #c5c5c5;
+      box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+      border-radius: 5px;
+
+      font-size: 12px;
+      line-height: calc(16 / 12);
+
+      &::placeholder {
+        color: transparent;
+      }
+
+      & + .placeholder {
+        font-size: 12px;
+        line-height: calc(16 / 12);
+        position: absolute;
+        left: 15px;
+        top: 50%;
+        transform: translateY(-50%);
+        transition: all 0.4s ease;
+        opacity: 1;
+
+        pointer-events: none;
+      }
+      &:focus + .placeholder,
+      &:not(:placeholder-shown) + .placeholder {
+        font-weight: 400;
+        font-size: 10px;
+        opacity: 0.5;
+        top: 4px;
+        transform: translate(0);
+      }
+    }
+  }
+
+  // .formBlock__checkbox
+  &__checkbox {
+    label {
+      position: relative;
+
+      padding: 0 0 0 24px;
+      font-size: 12px;
+      line-height: calc(16 / 12);
+      display: inline-flex;
+      align-items: center;
+
+      cursor: pointer;
+    }
+
+    input {
+      position: absolute;
+      z-index: -1;
+      opacity: 0;
+    }
+
+    label::before {
+      content: "";
+      position: absolute;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+
+      width: 14px;
+      height: 14px;
+      border-radius: 50%;
+
+      border: 1px solid #000000;
+      margin-right: 10px;
+    }
+
+    input + label::after {
+      content: "";
+      position: absolute;
+      width: 8px;
+      height: 8px;
+      left: 3px;
+      top: 50%;
+      transform: translateY(-50%);
+      border-radius: 50%;
+      transition: background 0.3s ease;
+
+      background-color: transparent;
+    }
+
+    input:checked + label::after {
+      background-color: #0088cc;
+    }
+
+    input:disabled + label::before {
+      opacity: 0.3;
+    }
+  }
+
+  // .formBlock__label--file
+  &__label--file {
+    cursor: pointer;
+    display: block;
+    width: 100%;
+    height: 114px;
+    padding: 10px;
+
+    background: #ffffff;
+    border: 0.2px solid #c5c5c5;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 5px;
+
+    font-size: 12px;
+    line-height: 16px;
+
+    span {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      height: 100%;
+      border: 1px dashed #cbc8c8;
+      border-radius: 5px;
+      color: #cbc8c8;
+    }
+
+    &._active {
+      cursor: default;
+      .file-view {
+        display: grid;
+      }
+      p {
+        display: none;
+      }
+    }
+  }
+}
+
+.file-view {
+  flex: 0 0 100%;
+  display: none;
+  align-items: flex-end;
+  grid-template: 100% / 1fr 50% 1fr;
+
+  height: 100%;
+  padding: 6px 10px;
+
+  color: hsla(0, 0, 0, 0.5);
+  font-weight: 600;
+
+  &__another,
+  &__remove {
+    cursor: pointer;
+    transition: color 0.3s ease;
+  }
+
+  &__another:hover,
+  &__remove:hover {
+    color: rgb(118, 118, 118);
+  }
+
+  // .file-view__file
+  &__file {
+    height: 100%;
+    align-self: center;
+    justify-self: center;
+
+    canvas {
+      height: 100%;
+      object-fit: contain;
+    }
+  }
+
+  // .file-view__remove
+  &__remove {
+    justify-self: flex-end;
+  }
+}

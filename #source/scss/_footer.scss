@@ -1,0 +1,38 @@
+.footer {
+  margin: 0 0 40px 0;
+  padding: 0 15px;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+
+  &__buttons {
+    display: flex;
+    align-items: center;
+    gap: 50px;
+    margin: 0 0 40px 0;
+  }
+
+  &__button {
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    line-height: calc(18 / 14);
+    gap: 12px;
+
+    &._disabled {
+      cursor: default;
+      opacity: 0.4;
+    }
+
+    &:not(._disabled):hover {
+      filter: drop-shadow(0px 2px 3px rgba(0, 0, 0, 0.25));
+      font-weight: 700;
+    }
+
+    &:last-child {
+      svg {
+        transform: rotate(180deg);
+      }
+    }
+  }
+}
