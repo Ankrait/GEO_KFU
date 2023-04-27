@@ -405,10 +405,19 @@ video {
   padding: 50px 127px 50px 100px;
   background: #ebf5fb;
   border-radius: 15px;
+  position: relative;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
   gap: 7%;
+}
+.formBlock__meta {
+  position: absolute;
+  top: 50px;
+  right: 29px;
+}
+.formBlock__meta img {
+  cursor: pointer;
 }
 .formBlock__information {
   -webkit-box-flex: 0;
@@ -639,7 +648,7 @@ video {
       align-self: center;
   justify-self: center;
 }
-.file-view__file canvas {
+.file-view__file img {
   height: 100%;
   -o-object-fit: contain;
      object-fit: contain;

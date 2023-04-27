@@ -1,10 +1,10 @@
-//----------------- Скролл меню -----------------// 
+//----------------- Скролл меню -----------------//
 const rect = document.querySelector(".menu-page__rectnagle span");
 const menu_list = document.querySelectorAll("[data-menu]");
 const block_list = document.querySelectorAll("[data-block]");
 
 // Изменение меню при скроле на блок
-document.addEventListener("scroll", () => {
+const onScrollToBlock = () => {
   const view_top = window.scrollY;
 
   block_list.forEach(block => {
@@ -13,7 +13,9 @@ document.addEventListener("scroll", () => {
       setMenuItemActiveByDataset(block.dataset.block);
     }
   });
-});
+}
+document.addEventListener("DOMContentLoaded", onScrollToBlock);
+document.addEventListener("scroll", onScrollToBlock);
 
 // Скролл к блоку по нажатию на меню
 menu_list.forEach(item => {
@@ -65,7 +67,7 @@ file_block.forEach(block => {
   const btn_rechoose = block.querySelector('.file-view__another');
 
   label.addEventListener('click', (e) => {
-    if (label.classList.contains('_active') && e.target != btn_rechoose || e.target == btn_remove)
+    if (this.classList.contains('_active') && e.target != btn_rechoose || e.target == btn_remove)
       e.preventDefault();
   });
 

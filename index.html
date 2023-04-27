@@ -185,7 +185,7 @@
                                           Другой файл
                                        </div>
                                        <div class="file-view__file">
-                                          <canvas class="canva"></canvas>
+                                          <img></img>
                                        </div>
                                        <div class="file-view__remove">
                                           Удалить
@@ -264,7 +264,56 @@
                      </div>
                   </div>
                </div>
-               <div data-block="education" class=""></div>
+               <div data-block="education" class="formBlock">
+                  <div class="formBlock__container container-s">
+                     <div class="formBlock__content">
+                        <div class="formBlock__meta">
+                           <img src="./img/meta.svg" alt="">
+                        </div>
+                        <div class="formBlock__information">
+                           <div class="formBlock__title">
+                              Образование
+                           </div>
+                           <div class="formBlock__text">
+                              Укажите детали полученного Вами последнего образования. Прикрепите документы об образовании.
+                           </div>
+                        </div>
+                        <div class="formBlock__list">
+                           <div class="formBlock__item">
+                              <input placeholder="Уровень образования" type="text" name="educ_lvl">
+                              <span class="placeholder">Уровень образования</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Страна получения образования" type="text" name="educ_country">
+                              <span class="placeholder">Страна получения образования</span>
+                           </div>
+                           <div class="formBlock__item">
+                              <input placeholder="Наименование учебного заведения" type="text" name="educ_place">
+                              <span class="placeholder">Наименование учебного заведения</span>
+                           </div>
+                           <div class="formBlock__item __file">
+                              <input type="file" name="educ_doc" id="educ_doc">
+                              <label class="formBlock__label--file" for="educ_doc">
+                                 <span>
+                                    <div class="file-view">
+                                       <div class="file-view__another">
+                                          Другой файл
+                                       </div>
+                                       <div class="file-view__file">
+                                          <img></img>
+                                       </div>
+                                       <div class="file-view__remove">
+                                          Удалить
+                                       </div>
+                                    </div>
+                                    <p>Загрузите ваш документ об образовании</p>
+                                 </span>
+                              </label>
+                           </div>
+                        </div>
+                     </div>
+                  </div>
+               </div>
                <div class="menu-page">
                   <div class="menu-page__content">
                      <div class="menu-page__list">
@@ -309,5 +358,4 @@
    </div>
 </body>
 <script src="./js/script.js"></script>
-
 </html>

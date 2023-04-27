@@ -13,9 +13,21 @@
     padding: 50px 127px 50px 100px;
     background: #ebf5fb;
     border-radius: 15px;
+    position: relative;
 
     display: flex;
     gap: 7%;
+  }
+
+  // .formBlock__meta
+  &__meta {
+    position: absolute;
+    top: 50px;
+    right: 29px;
+
+    img {
+      cursor: pointer;
+    }
   }
 
   // .formBlock__information
@@ -230,7 +242,7 @@
     align-self: center;
     justify-self: center;
 
-    canvas {
+    img {
       height: 100%;
       object-fit: contain;
     }
